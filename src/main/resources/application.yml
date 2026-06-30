@@ -28,8 +28,8 @@ spring:
           predicates:
             - Path=/api/productos,/api/productos/**
 
-        - id: ms-bodegas
-          uri: lb://MS-BODEGAS
+        - id: ms-bodega
+          uri: lb://MS-BODEGA
           predicates:
             - Path=/api/ubicaciones,/api/ubicaciones/**
 
