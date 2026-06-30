@@ -28,13 +28,13 @@ spring:
           predicates:
             - Path=/api/productos,/api/productos/**
 
-        - id: ms-bodega
+        - id: ms-bodegas
           uri: lb://MS-BODEGAS
           predicates:
             - Path=/api/ubicaciones,/api/ubicaciones/**
 
         - id: ms-proveedores
-          uri: lb://MS-PROVEDORES
+          uri: lb://MS-PROVEEDORES
           predicates:
             - Path=/api/proveedores,/api/proveedores/**
 
@@ -44,6 +44,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: ${EUREKA_URL:http://eureka-server:8761/eureka/}  
+      
 
 management:
   endpoints:
